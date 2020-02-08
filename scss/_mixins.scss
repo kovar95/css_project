@@ -1,0 +1,34 @@
+@mixin slideEffect() {
+	width: 15px;
+	height: 15px;
+	background-color: $sweetOrange;
+}
+
+@mixin backgroundStyle($imgUrl) {
+	background: url($imgUrl);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin containerDesign() {
+	position: relative;
+	display: block;
+	@include size(280px, 280px);
+	border-radius: 10px;
+}
+
+@mixin flexy($justifyContent){
+	display: flex;
+	justify-content: $justifyContent;
+}
+
+@mixin centerText($size) {
+	text-align: center;
+	font-size: $size;
+}
